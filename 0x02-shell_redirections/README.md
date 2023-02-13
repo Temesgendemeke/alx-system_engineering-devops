@@ -31,3 +31,10 @@ on second line i used "head -n 3 iacta | -1 tail " to display 3 thired line of t
 7. It is a good file that cuts iron without making a noise
 first line #!/bin/bash to tell terminal my code is bash script
 on second line "echo 'Best School' > \\\*\\\\"'\"Best School\"\\'"\\\\\*\$\\\?\\\*\\\*\\\*\\\*\\\*:\)" i added backslash and doube qoutes to escape special character
+
+8. Save current state of directory
+first line #!/bin/bash to tell terminal my code is bash script
+on second line "ls -la > ls_cwd_content" to write list (ls -la) on ls_cwd_content file
+
+
+
