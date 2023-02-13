@@ -27,3 +27,7 @@ on second line i used "head -n10 /etc/passwd" to print the first 10 lines on the
 6. Line #2
 first line #!/bin/bash to tell terminal my code is bash script
 on second line i used "head -n 3 iacta | -1 tail " to display 3 thired line of the file
+
+7. It is a good file that cuts iron without making a noise
+first line #!/bin/bash to tell terminal my code is bash script
+on second line "echo 'Best School' > \\\*\\\\"'\"Best School\"\\'"\\\\\*\$\\\?\\\*\\\*\\\*\\\*\\\*:\)" i added backslash and doube qoutes to escape special character
