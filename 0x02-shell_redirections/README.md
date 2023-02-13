@@ -23,3 +23,7 @@ on second line i used tail " -n 10 /etc/passwd " to print last 10 line of /etc/p
 5. I'd prefer the first ones actually
 first line #!/bin/bash to tell terminal my code is bash script
 on second line i used "head -n10 /etc/passwd" to print the first 10 lines on the file
+
+6. Line #2
+first line #!/bin/bash to tell terminal my code is bash script
+on second line i used "head -n 3 iacta | -1 tail " to display 3 thired line of the file
