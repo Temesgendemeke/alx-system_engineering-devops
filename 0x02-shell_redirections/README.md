@@ -15,3 +15,7 @@ I used  cat command  display the entire file content
 first line #!/bin/bash to tell terminal my code is bash script
 on second line i used cat /etc/passwd /etc/hosts 
 on previous project i displayed one file but on this project i displayed 2 files content by using space between  two file names
+
+4. Last lines of a file
+first line #!/bin/bash to tell terminal my code is bash script
+on second line i used tail " -n 10 /etc/passwd " to print last 10 line of /etc/passwd
