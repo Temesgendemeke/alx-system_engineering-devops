@@ -19,3 +19,7 @@ on previous project i displayed one file but on this project i displayed 2 files
 4. Last lines of a file
 first line #!/bin/bash to tell terminal my code is bash script
 on second line i used tail " -n 10 /etc/passwd " to print last 10 line of /etc/passwd
+
+5. I'd prefer the first ones actually
+first line #!/bin/bash to tell terminal my code is bash script
+on second line i used "head -n10 /etc/passwd" to print the first 10 lines on the file
