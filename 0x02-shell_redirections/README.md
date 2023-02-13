@@ -10,3 +10,8 @@ on second line i used  echo "\"(Ôo)'"  echo "" to print and \ (backslash) to ig
 first line #!/bin/bash to tell terminal my code is bash script
 on second cat /etc/passwds
 I used  cat command  display the entire file content
+
+3. What about 2?
+first line #!/bin/bash to tell terminal my code is bash script
+on second line i used cat /etc/passwd /etc/hosts 
+on previous project i displayed one file but on this project i displayed 2 files content by using space between  two file names
