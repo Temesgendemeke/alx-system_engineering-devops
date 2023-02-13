@@ -36,5 +36,9 @@ on second line "echo 'Best School' > \\\*\\\\"'\"Best School\"\\'"\\\\\*\$\\\?\\
 first line #!/bin/bash to tell terminal my code is bash script
 on second line "ls -la > ls_cwd_content" to write list (ls -la) on ls_cwd_content file
 
+9. Duplicate last line
+first line #!/bin/bash to tell terminal my code is bash script
+on second line "tail -n 1 iacta >> iacta" to duplicates the last line of the file
+
 
 
