@@ -40,5 +40,9 @@ on second line "ls -la > ls_cwd_content" to write list (ls -la) on ls_cwd_conten
 first line #!/bin/bash to tell terminal my code is bash script
 on second line "tail -n 1 iacta >> iacta" to duplicates the last line of the file
 
+10. No more javascript
+first line #!/bin/bash to tell terminal my code is bash script
+on second line "find . -name \*.js -type f -delete" to delete every file with js extension
+
 
 
