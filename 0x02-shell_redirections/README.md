@@ -44,5 +44,9 @@ on second line "tail -n 1 iacta >> iacta" to duplicates the last line of the fil
 first line #!/bin/bash to tell terminal my code is bash script
 on second line "find . -name \*.js -type f -delete" to delete every file with js extension
 
+11. Don't just count your directories, make your directories count
+first line #!/bin/bash to tell terminal my code is bash script
+second line "find . -mindepth 1 -type d | wc -l" to count all directories and sub-directories in the current directory include hiddendirectories and sub-directories in the current directory
+
 
 
