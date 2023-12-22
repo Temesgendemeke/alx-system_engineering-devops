@@ -1,11 +1,3 @@
 #!/usr/bin/env bash
 # prints current process with full info
-
-echo "PID   | PPID  | USER       | COMMAND"
-echo "------------------------------------"
-
-# Fetch process details using ps command, exclude header, and format using awk
-ps aux --forest | awk 'NR > 1 {printf "%-6s| %-6s| %-10s| %s\n", $2, $3, $1, $11}'
-
-# Note: The --forest option in ps displays the process tree hierarchy.
-
+ps -u
