@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#prints string 10 times using while
+
+for pid in /proc/[0-9]*; do
+    # Check if the command contains the word "bash"
+    if grep -q "bash" "$pid/cmdline" 2>/dev/null; then
+        # Extract and display the PID and process name
+        process_name=$(tr '\0' ' ' < "$pid/cmdline")
+        echo "${pid##*/} $process_name"
+    fi
+done
