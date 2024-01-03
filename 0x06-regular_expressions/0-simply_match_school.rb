@@ -1,2 +1,7 @@
 #!/usr/bin/env ruby
-print "#{ARGV[0].match(/School*/i)}\n"
+reg = ARGV[0].scan(/School*/i)
+
+for i in reg
+    print i
+end
+print "\n"
