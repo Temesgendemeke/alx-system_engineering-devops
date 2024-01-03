@@ -1,3 +1,2 @@
 #!/usr/bin/env ruby
-/school/
-
+print "#{ARGV[0].match(/School/)}\n"
