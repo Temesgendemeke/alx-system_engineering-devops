@@ -1,5 +1,6 @@
 # installing flask through puppet
 
-exec { 'flask':
- command => '/usr/bin/apt install python3-flask -v 2.1.0'
+package { 'flask':
+  ensure   => '2.1.0',
+  provider => 'pip3',
 }
