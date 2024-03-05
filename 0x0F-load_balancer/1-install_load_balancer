@@ -1,0 +1,18 @@
+#!usr/bin/env bash/
+# Install and configure HAproxy on server.
+apt-get update -y
+apt install haproxy -y
+
+echo '
+frontend temesgendora.tech
+       bind 0:80
+	   default_backend web_servers
+	   mode http
+backend web_servers
+       mode http
+       balance roundrobin
+	   server 246439-web-01 52.3.247.18:80
+	   server 246439-web-02 54.160.78.70:80
+' >> /etc/haproxy/haproxy.cfg
+
+systemctl restart haproxy
