@@ -1,0 +1,5 @@
+#!/bin/env bash
+# backup mysql
+sudo mysqldump -uroot -p --all-databases > backup.sql
+tar -czvf day-month-year.tar.gz backup.sql
+sudo mysql -uroot -p"$1"
