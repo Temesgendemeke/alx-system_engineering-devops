@@ -3,5 +3,5 @@
 
 sudo adduser --system --no-create-home --disabled-login --group nginx
 sudo sed -i 's/www-data/nginx/g' /etc/nginx/nginx.conf
-sudo sed -i 's/listen 80;/listen 8080;/g' /etc/nginx/nginx.conf
+sudo sed -i 's/listen 80;/listen 8080 default_server;/g' /etc/nginx/nginx.conf
 sudo systemctl restart nginx
