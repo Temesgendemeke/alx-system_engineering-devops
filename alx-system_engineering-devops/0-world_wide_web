@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# configure website with https
+
+check()
+{
+	sub=$2
+	dig "$2.$1" | grep -A1 'ANSWER SECTION:' | awk -v sub_domain=$2 'NR==2 {print "The subdomain "sub_domain" is a "$4" record and points to " split($0,dom, "."); dom[3]}'
+}
+check $1 $2
+
+
+
