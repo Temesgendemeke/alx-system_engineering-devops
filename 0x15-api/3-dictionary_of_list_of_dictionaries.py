@@ -18,12 +18,12 @@ if __name__ == "__main__":
                 done += 1
 
     for user in users:
-        id = user['id']
-        dump_dict[id] = []
+        dump_list = []
         for value in values:
             if value['userId'] == user['id']:
-                dump_dict[id].append({"username": user['username'],
+                dump_list.append({"username": user['username'],
                                       "task": value['title'],
                                       "completed": value['completed']})
+        dump_dict[user['id']] = dump_list        
     with open("todo_all_employees.json", "a+") as jsonfile:
         json.dump(dump_dict, fp=jsonfile)
