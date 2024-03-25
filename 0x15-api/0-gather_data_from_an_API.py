@@ -5,11 +5,10 @@
 if __name__ == "__main__":
     import requests
     from sys import argv
-    
+
     id = int(argv[1])
     values = requests.get("https://jsonplaceholder.typicode.com/todos").json()
     users = requests.get("https://jsonplaceholder.typicode.com/users").json()
-
     done = 0
     total = 0
 
