@@ -22,8 +22,8 @@ if __name__ == "__main__":
         dump_dict[id] = []
         if user['id'] == id:
             for value in values:
-                dump_dict[id].append([{"username": user['username'],
+                dump_dict[id].append({"username": user['username'],
                                        "task": value['title'],
-                                       "completed": value['completed']}])
+                                       "completed": value['completed']})
     with open("all.json", "a+") as jsonfile:
         json.dump(dump_dict, fp=jsonfile)
