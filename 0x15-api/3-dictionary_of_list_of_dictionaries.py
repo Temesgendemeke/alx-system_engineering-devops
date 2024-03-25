@@ -20,7 +20,7 @@ if __name__ == "__main__":
     for user in users:
         id = user['id']
         dump_dict[id] = []
-        if user['id'] == id:
+        if user['id'] == id and value['completed']:
             for value in values:
                 dump_dict[id].append({"username": user['username'],
                                        "task": value['title'],
