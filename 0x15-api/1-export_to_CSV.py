@@ -22,8 +22,11 @@ if __name__ == "__main__":
     for user in users:
         if user['id'] == id:
             with open("{}.csv".format(id), "a+") as csvfile:
-               writer = csv.writer(csvfile)
-               for value in values:
+                writer = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
+                for value in values:
                     if value['userId'] == id:
-                        itr = [user['id'],user['username'],value['completed'], value['title']]
+                        itr = [user['id'],
+                               user['username'],
+                               value['completed'],
+                               value['title']]
                         writer.writerow(itr)
