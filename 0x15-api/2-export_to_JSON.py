@@ -12,6 +12,7 @@ if __name__ == "__main__":
     users = requests.get("https://jsonplaceholder.typicode.com/users").json()
     done = 0
     total = 0
+    dump_dict = {}
 
     for value in values:
         if value['userId'] == id:
@@ -21,12 +22,12 @@ if __name__ == "__main__":
 
     for user in users:
         if user['id'] == id:
-            with open("{}.json".format(id), "a+") as csvfile:
-                for value in values:
-                    if value['userId'] == id:
-                        itr = {value['userId']: [
-                               {"task": value['title'],
-                                "completed": value['completed'],
-                                "username": user['username']
-                                }]}
-                        json.dump(itr, fp=csvfile)
+            dump_dict[id] = []
+            for value in values:
+                if value['userId'] == id:
+                    dump_dict[id].append({"task": value['title'],
+                                          "completed": value['completed'],
+                                          "username": user['username']})
+
+    with open("{}.json".format(id), "a+") as csvfile:
+        json.dump(dump_dict, fp=csvfile)
